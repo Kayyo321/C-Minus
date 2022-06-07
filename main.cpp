@@ -52,9 +52,7 @@ int main()
         std::vector<Token> tokens {lexer->Parse(contents)};
 
         for (const Token &token: tokens)
-        {
             token.Info();
-        }
 
         delete lexer;
 
